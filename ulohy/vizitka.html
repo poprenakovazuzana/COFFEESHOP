@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <title>Resume Card</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+
+    :root{
+
+      --bg:#ffffff;
+
+      --ink:#222;
+
+      --muted:#666;
+
+      --line:#e7e7e7;
+
+      --accent:#0a66c2;
+
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+
+      margin:0;
+
+      font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+
+      color:var(--ink);
+
+      background:#f4f5f6;
+
+      padding:24px;
+
+    }
+
+ 
+
+    .resume{
+
+      max-width:980px;
+
+      margin:0 auto;
+
+      background:var(--bg);
+
+      display:grid;
+
+      grid-template-columns: 320px 1fr;
+
+      border:1px solid var(--line);
+
+      box-shadow:0 2px 12px rgba(0,0,0,.06);
+
+    }
+
+ 
+
+    /* header strip */
+
+    .title{
+
+      grid-column:1 / -1;
+
+      padding:18px 22px;
+
+      font-weight:800;
+
+      letter-spacing:.08em;
+
+      text-transform:uppercase;
+
+      border-bottom:1px solid var(--line);
+
+    }
+
+ 
+
+    /* left sidebar */
+
+    .sidebar{
+
+      border-right:1px solid var(--line);
+
+      background:#fafafa;
+
+    }
+
+    .photo{
+
+      width:100%;
+
+      aspect-ratio: 4 / 3;
+
+      object-fit:cover;
+
+      display:block;
+
+      border-bottom:1px solid var(--line);
+
+    }
+
+    .box{
+
+      padding:20px 20px 14px;
+
+    }
+
+    .box h3{
+
+      margin:0 0 14px;
+
+      font-size:14px;
+
+      text-transform:uppercase;
+
+      letter-spacing:.08em;
+
+      color:#111;
+
+    }
+
+    .kv{
+
+      display:grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      row-gap:8px;
+
+      column-gap:12px;
+
+    }
+
+    .kv .k{
+
+      color:var(--muted);
+
+      text-transform:uppercase;
+
+      font-size:12px;
+
+      letter-spacing:.06em;
+
+    }
+
+    .kv .v{font-weight:600}
+
+ 
+
+    /* right content */
+
+    .content{padding:22px}
+
+    .card{
+
+      border:1px solid var(--line);
+
+      background:#fff;
+
+    }
+
+    .card h3{
+
+      margin:0;
+
+      padding:14px 18px;
+
+      border-bottom:1px solid var(--line);
+
+      font-size:14px;
+
+      text-transform:uppercase;
+
+      letter-spacing:.08em;
+
+    }
+
+    .card .inner{
+
+      padding:18px;
+
+    }
+
+    .grid-2{
+
+      display:grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap:14px 24px;
+
+    }
+
+    .item .label{
+
+      color:var(--muted);
+
+      font-weight:700;
+
+      text-transform:uppercase;
+
+      font-size:12px;
+
+      letter-spacing:.06em;
+
+      margin-bottom:4px;
+
+    }
+
+    .item .value a{color:var(--accent); text-decoration:none}
+
+    .item .value a:hover{text-decoration:underline}
+
+ 
+
+    .section{
+
+      margin-top:18px;
+
+      border:1px solid var(--line);
+
+      background:#fff;
+
+    }
+
+    .section h4{
+
+      margin:0;
+
+      padding:14px 18px;
+
+      font-size:16px;
+
+      font-weight:800;
+
+      text-transform:uppercase;
+
+      border-bottom:1px solid var(--line);
+
+    }
+
+    .section .inner{padding:18px; color:#333}
+
+ 
+
+    @media (max-width: 880px){
+
+      .resume{grid-template-columns:1fr}
+
+      .sidebar{border-right:none; border-bottom:1px solid var(--line)}
+
+      .photo{aspect-ratio: 16 / 9}
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <article class="resume">
+
+    <div class="title">Resume</div>
+
+ 
+
+    <!-- LEFT: photo + professional details -->
+
+    <aside class="sidebar">
+
+      <img class="photo" src="obj.JPG" alt="Profile photo">
+
+      <div class="box">
+
+        <h3>Professional Details</h3>
+
+        <div class="kv">
+
+          <div class="k">Name</div><div class="v">John Doe</div>
+
+          <div class="k">Age</div><div class="v">38 Years</div>
+
+          <div class="k">Location</div><div class="v">Rome, Italy</div>
+
+          <div class="k">Experience</div><div class="v">15 Years</div>
+
+          <div class="k">Degree</div><div class="v">MBA</div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+ 
+
+    <!-- RIGHT: about + short intro -->
+
+    <section class="content">
+
+      <div class="card">
+
+        <h3>About Me</h3>
+
+        <div class="inner grid-2">
+
+          <div class="item">
+
+            <div class="label">Name</div>
+
+            <div class="value">John Doe</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Age</div>
+
+            <div class="value">38 Years</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Location</div>
+
+            <div class="value">Rome, Italy</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Experience</div>
+
+            <div class="value">15 Years</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Degree</div>
+
+            <div class="value">MBA</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Career Level</div>
+
+            <div class="value">Mid-Level</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Phone</div>
+
+            <div class="value">(800) 123-4567</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Fax</div>
+
+            <div class="value">(800) 123-4568</div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">E-mail</div>
+
+            <div class="value"><a href=mailto:example@example.com>example@example.com</a></div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="label">Website</div>
+
+            <div class="value"><a href=https://example.com>example.com</a></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+ 
+
+      <div class="section">
+
+        <h4>I’m Web Designer</h4>
+
+        <div class="inner">
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi.
+
+          Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam.
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </article>
+
+</body>
+
+</html>

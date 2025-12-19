@@ -1,0 +1,421 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f5f0e8;
+    /* krémová */
+    color: #3e2723;
+    /* tmavohnedá */
+}
+
+/* Hlavička */
+header {
+    background-color: #4e342e;
+    height: 30vh;
+    /* 30 % výšky obrazovky */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* vertikálne centrovanie! */
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+
+
+.header-left {
+    display: flex;
+    align-items: center;
+    /* logo + text v strede výšky */
+    gap: 0px;
+    /* medzera medzi logom a textom */
+}
+
+.logo {
+    height: 200px;
+    /* skús 120px, môžeš skúsiť aj 100 alebo 140 */
+    align-items: center;
+
+}
+
+.brand {
+    color: #f5f0e8;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-family: "Times New Roman", serif;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    color: #f5f0e8;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hlavná časť */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fffaf3;
+    /* svetlá krémová */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.intro {
+    background-color: #4e342e;
+    padding: 40px;
+    color: #fffaf3;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+
+
+.intro-image {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro img {
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+
+.intro-text {
+    flex-grow: 1;
+    color: #fffaf3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.intro-text h1 {
+    color: #fffaf3;
+
+}
+
+.intro-button {
+    background-color: #fffaf3;
+    color: #4e342e;
+    margin-top: 40px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.intro-button:hover {
+    background-color: #cfc3b2;
+}
+
+
+.button {
+    margin-top: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #4e342e;
+    background-color: #f5f0e8;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nadpis a text */
+h1,
+h2 {
+    color: #3e2723;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Jednoduchý zoznam (napr. menu) */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Formulár */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4e342e;
+    color: #f5f0e8;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Päta – prázdna lišta */
+footer {
+    margin-top: 80px;
+    padding: 20px 0;
+    background-color: #4e342e;
+    color: #f5f0e8;
+    text-align: right;
+    padding: 40px;
+}
+
+.coffee-section {
+    width: 100%;
+    max-width: 10000px;
+    /* aby šírka bola podobná ako hlavná časť stránky */
+    margin: 0px auto;
+    background-color: #4e342e;
+    /* hnedá */
+    padding: 50px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.coffee-img {
+    width: 25%;
+    /* obrázok zaberie ľavú časť */
+    border-radius: 10px;
+}
+
+.coffee-info {
+    width: 60%;
+    /* pravá časť pre nadpis a tlačidlo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 👉 toto vystredí obsah vertikálne */
+    gap: 20px;
+    /* medzera medzi nadpisom a tlačidlom */
+}
+
+.coffee-info h2 {
+    color: #f5f0e8;
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-family: "Times New Roman", serif;
+
+}
+
+.coffee-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #f5f0e8;
+    color: #4e342e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    width: fit-content;
+    transition: 0.2s;
+}
+
+.coffee-btn:hover {
+    background-color: #e2d7c9;
+}
+
+
+
+
+/*  style for menu page */
+.menu-container {
+    display: grid;
+    gap: 20px;
+}
+
+.menu-title {
+    text-align: center;
+}
+
+.menu-product-a {
+    background-color: #4e342e1f;
+    border-radius: 20px;
+
+}
+
+
+.menu-product {
+    display: flex;
+}
+
+.menu-product-image {
+    height: 320px;
+    width: 180px;
+    border-radius: 20px;
+}
+
+.menu-product-desc {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.menu-product-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+.menu-product-a td,
+.menu-product-a th {
+    text-align: left;
+    padding: 10px;
+
+}
+
+.menu-product-b td,
+.menu-product-b th {
+    text-align: left;
+    padding: 10px;
+
+}
+
+.main-contacts {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #4e342e1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.body-contacts {
+    text-align: center;
+
+}
+
+.text-contacts {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.contacts-image {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.main-cvicenia {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fffaf3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+}
+
+.main-ulohy {
+    max-width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    flex: 0 0 100px;
+    background-color: #4e342e1f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #3e2723;
+}
+
+.main-ulohy a {
+    text-align: center;
+    text-decoration: none;
+    color: #3e2723;
+}
+
+.body-ulohy {
+    text-align: center;
+    text-decoration: none;
+    color: #3e2723;
+}
+
+.ulohy-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ulohy-button:hover {
+    background-color: #cfc3b2;
+}
+
+
+
+.body-form {
+    font-family: "Times New Roman", serif;
+    background-color: #d0d0d0;
+    font-size: 1rem;
+}

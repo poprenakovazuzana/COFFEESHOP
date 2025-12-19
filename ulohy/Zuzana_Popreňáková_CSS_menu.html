@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Popreňáková Zuzana: CSS stránka</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2b2b2b;
+      border: 5px solid black;
+    }
+
+    .topnav {
+      display: flex;
+      border: 1px solid yellow;
+
+    }
+
+    .topnav .nav-item {
+      flex: 1;
+      text-align: center;
+      text-decoration: none;
+      color: #f6d9ca;
+      background: #5b1c1c;
+      padding: 8px 10px;
+      font-weight: bold;
+      letter-spacing: .5px;
+      border-bottom: 5px;
+      border-color:  yellow;
+    }
+
+    .topnav .nav-item:hover {
+      background: gray;
+      transform: translateY(-1px);
+    }
+
+    .center-banner {
+      max-width: 100%;
+      background: linear-gradient(#991f1f, #6f1414);
+      text-align: center;
+    }
+
+    .center-banner span {
+      color: #ffdf4d;
+      font-weight: 800;
+      font-size: 28px;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 0 #3a0f0f;
+
+    }
+
+    .black-bar {
+        background-color: black;    
+        width: 100%;
+        height: 20px;
+    }
+
+.menu {
+    background: url('texture.jpg') repeat-x;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    border-left: 1px solid yellow;
+    border-right: 1px solid yellow;
+    border-top: 1px solid yellow;
+}
+
+  .content {
+      width: 100%;
+      min-height: 85vh;
+      background: #ffffff;
+      padding: 22px 26px;
+      border-top: 1px solid #b5b5b5;
+      border-bottom: 1px solid #b5b5b5;
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+      line-height: 1.6;
+    }
+
+    .content i {
+      display: block;
+      text-align: center;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+    <menu class="menu"></menu>
+
+
+    <nav class="topnav">
+      <a href="#" class="nav-item">Položka 1</a>
+      <a href="#" class="nav-item">Položka 2</a>
+      <a href="#" class="nav-item">Položka 3</a>
+      <a href="#" class="nav-item">Položka 4</a>
+      <a href="#" class="nav-item">CSS Navbar</a>
+    </nav>
+
+    <div class="black-bar">
+    </div>
+
+    <div class="center-banner">
+      <span>Lorem Ipsum</span>
+    </div>
+
+    <main class="content">
+      <p><i>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>
+"Nie je nikto, kto by mal rád bolesť samotnú, kto ju hľadá a chce ju mať, jednoducho lebo je to bolesť..."
+</i></p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut tellus rhoncus, porttitor libero at, interdum enim. Donec orci velit, convallis eget risus quis, scelerisque congue neque. Praesent enim nisl, sodales cursus lacus eget, euismod blandit tortor. Etiam sollicitudin id mi ut rhoncus. Nam tincidunt turpis justo, vitae consequat tellus cursus nec. Donec eget ipsum dictum, tincidunt dui et, feugiat risus. Curabitur aliquam elit a augue varius ultricies. Nunc sed ipsum eget erat pharetra porta. Ut nisi tellus, rutrum nec ex quis, ullamcorper rhoncus erat. Nam dolor arcu, lobortis at mattis quis, volutpat a nulla. Aliquam sollicitudin tempus ornare.
+</p>
+
+      <p>Donec varius vehicula tincidunt. Praesent egestas eros turpis, non aliquet velit interdum eu. Etiam est metus, tincidunt id felis id, placerat vulputate mauris. Nullam vulputate, sem ut ultricies facilisis, mauris enim vulputate tortor, ac scelerisque purus dolor sit amet neque. Donec gravida turpis enim, eget convallis lorem suscipit non. Vestibulum vel dictum est. In vehicula fermentum libero, et ultrices dui ultricies eget. Pellentesque sit amet lorem imperdiet purus imperdiet feugiat.
+</p>
+
+      <p>Sed consequat metus ut mattis viverra. Nullam malesuada facilisis ante sed malesuada. Ut fringilla dolor in mauris sollicitudin suscipit. Aliquam erat volutpat. Curabitur non ipsum posuere, accumsan nisi ut, feugiat nibh. Integer mollis augue dolor, ac condimentum odio malesuada nec. Curabitur ac orci ex. Morbi aliquam lobortis turpis, sed commodo diam. Integer iaculis urna sed ex finibus egestas. Nullam tincidunt vulputate lorem nec consectetur. Cras aliquam mi at orci ullamcorper, id tincidunt quam volutpat. Fusce gravida gravida sagittis.
+</p>
+    </main>
+
+
+</body>
+</html>

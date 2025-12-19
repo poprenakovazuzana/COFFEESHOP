@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>Zuzana Popreňáková: Konkurz na pracovné miesto v leteckom podniku</title>
+<style>
+    body {
+        font-family: "Times New Roman", serif;
+        background-color: #d0d0d0;
+        font-size: 1rem;
+    }
+    form {
+        background-color: #c0c0c0;
+        width: 520px;
+        margin: 40px auto;
+        padding: 12px;
+        border: 2px solid #666;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td {
+        border: 1px solid #888;
+        padding: 6px;
+        vertical-align: middle;
+    }
+    input[type="text"], input[type="password"], input[type="email"], input[type="tel"],
+    input[type="number"], input[type="date"], select, textarea {
+        width: 95%;
+        font-family: "Times New Roman", serif;
+        font-size: 1rem;
+        border: 1px solid #777;
+        background-color: #f2f2f2;
+        padding: 3px;
+    }
+    textarea {
+        height: 60px;
+        resize: none;
+    }
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 3px;
+    }
+    fieldset {
+        border: 1px solid #555;
+        margin-bottom: 10px;
+        padding: 8px;
+        background-color: #d9d9d9;
+    }
+    legend {
+        font-weight: bold;
+        background-color: #f0f0f0;
+        border: 1px solid #555;
+        padding: 2px 6px;
+    }
+    .buttons {
+        text-align: center;
+        margin-top: 10px;
+    }
+    input[type="submit"], input[type="reset"] {
+        background-color: #b0b0b0;
+        border: 1px solid #333;
+        padding: 5px 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: #a0a0a0;
+    }
+</style>
+</head>
+<body>
+
+<form action="konkurz.php" method="post">
+
+    <fieldset>
+        <legend>Prihlasovacie údaje</legend>
+        <table>
+            <tr>
+                <td>Meno</td>
+                <td><input type="text" name="meno" placeholder="Meno" required></td>
+                <td>Heslo</td>
+                <td><input type="password" name="heslo" placeholder="********" required></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email" name="email" placeholder="Vaša emailova adresa" required></td>
+                <td>Telefón</td>
+                <td><input type="tel" name="telefon" placeholder="+421..." pattern="(\+421|0)\d{9}" required></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Osobné údaje</legend>
+        <table>
+            <tr>
+                <td>Dátum narodenia</td>
+                <td><input type="date" name="narodenie" required></td>
+                <td>Vek</td>
+                <td><input type="number" name="vek" min="18" max="65" required></td>
+            </tr>
+            <tr>
+                <td>Pohlavie</td>
+                <td colspan="3">
+                    <label><input type="radio" name="pohlavie" value="muz" required> Muž</label>
+                    <label><input type="radio" name="pohlavie" value="zena"> Žena</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Vzdelanie</td>
+                <td colspan="3">
+                    <select name="vzdelanie" required>
+                        <option value="">-- vyberte vzdelanie --</option>
+                        <option>Základné</option>
+                        <option>Stredoškolské</option>
+                        <option>Stredoškolské s maturitou</option>
+                        <option>Vysokoškolské I. stupňa</option>
+                        <option>Vysokoškolské II. stupňa</option>
+                        <option>Vysokoškolské III. stupňa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Miesto bydliska</td>
+                <td colspan="3"><input type="text" name="bydlisko" placeholder="" required></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Prihláška do konkurzu</legend>
+        <table>
+            <tr>
+                <td>Požadovaná pozícia</td>
+                <td colspan="3">
+                    <select name="pozicia" required>
+                        <option value="">-- vyberte pracovné miesto --</option>
+                        <option>Pilot</option>
+                        <option>Letuška</option>
+                        <option>Ochrana letiska</option>
+                        <option>Sekretárka</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Požadovaný plat (€)</td>
+                <td><input type="number" name="plat" min="800" max="8000" required></td>
+                <td>Skúsenosti (roky)</td>
+                <td><input type="number" name="skusenosti" min="0" max="40" required></td>
+            </tr>
+            <tr>
+                <td>Jazykové znalosti</td>
+                <td colspan="3">
+                    <label><input type="checkbox" name="jazyk" value="anglicky"> Anglický</label>
+                    <label><input type="checkbox" name="jazyk" value="nemecky"> Nemecký</label>
+                    <label><input type="checkbox" name="jazyk" value="francuzsky"> Francúzsky</label>
+                    <label><input type="checkbox" name="jazyk" value="spanielsky"> Španielsky</label>
+                     <label><input type="checkbox" name="jazyk" value="taliansky"> Taliansky</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Vodičský preukaz</td>
+                <td colspan="3">
+                    <label><input type="checkbox" name="vodicak" value="A"> A</label>
+                    <label><input type="checkbox" name="vodicak" value="B"> B</label>
+                    <label><input type="checkbox" name="vodicak" value="C"> C</label>
+                    <label><input type="checkbox" name="vodicak" value="D"> D</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Ochota cestovať</td>
+                <td colspan="3">
+                    <label><input type="radio" name="cestovanie" value="ano" required> Áno</label>
+                    <label><input type="radio" name="cestovanie" value="nie"> Nie</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Poznámky / doplňujúce informácie</td>
+                <td colspan="3">
+                    <textarea name="poznamka" placeholder="Sem môžete napísať doplňujúce údaje..."></textarea>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <div class="buttons">
+        <input type="reset" value="Vymazať">
+        <input type="submit" value="Odoslať prihlášku">
+    </div>
+</form>
+
+</body>
+</html>
