@@ -21,28 +21,28 @@
             <div class="menu-product-desc">
                  <table class="menu-product-table">
                     <tr>
-                        <th>COFFEE</th>
-                        <th>PRISE</th>
+                        <th>KÁVA</th>
+                        <th>CENA</th>
                     </tr>
                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
+                        <td>Espresso</td>
+                        <td>1.50 €</td>
                     </tr>
                     <tr>
-                        <td>Christina Berglund</td>
-                        <td>Berglunds snabbköp</td>
+                        <td>Espresso Lungo</td>
+                        <td>1.80 €</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td>Francisco Chang</td>
+                        <td>Cappuccino</td>
+                        <td>3.00 €</td>
                     </tr>
                     <tr>
-                        <td>Christina Berglund</td>
-                        <td>Berglunds snabbköp</td>
+                        <td>Latte</td>
+                        <td>3.20 €</td>
                     </tr>
                     <tr>
-                        <td>Christina Berglund</td>
-                        <td>Berglunds snabbköp</td>
+                        <td>Flat White</td>
+                        <td>3.50 €</td>
                     </tr>
                   
            
@@ -54,28 +54,28 @@
             <div class="menu-product-desc">
                  <table class="menu-product-table">
                     <tr>
-                        <th>COFFEE</th>
-                        <th>PRISE</th>
+                        <th>KOLÁČE</th>
+                        <th>CENA</th>
                     </tr>
                     <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
+                        <td> Čokoládová brownie</td>
+                        <td>3.50 €</td>
                     </tr>
                     <tr>
-                        <td>Christina Berglund</td>
-                        <td>Berglunds snabbköp</td>
+                        <td> Čokoládové coocie</td>
+                        <td>3.00 €</td>
                     </tr>
                     <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td>Francisco Chang</td>
+                        <td>Malinová coocie</td>
+                        <td>3.50 €</td>
                     </tr>
                     <tr>
-                        <td>Christina Berglund</td>
-                        <td>Berglunds snabbköp</td>
+                        <td> Karamelový chesecake</td>
+                        <td>3.00 €</td>
                     </tr>
                     <tr>
-                        <td>Christina Berglund</td>
-                        <td>Berglunds snabbköp</td>
+                        <td>Red velvet</td>
+                        <td>3.50 €</td>
                     </tr>
                   
            

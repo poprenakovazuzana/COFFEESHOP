@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Coffee Time - Domov</title>
+    <title>Coffee For You</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -25,22 +25,16 @@
         </div>
           <div class="intro-text">
 
-              <h1>Vitajte v Coffee Time</h1>
+              <h1>COFFEE FOR YOU</h1>
             <p>
-                V našej kaviarni veríme, že dobrá káva dokáže zmeniť celý deň.
-                Vyberáme len kvalitné kávové zrná a pripravujeme ich s láskou.
+                Vitajte v našej kaviarni, kde sa snažíme každému zákazníkovi ponúknuť kvalitnú a cenovo dostupnú kávu pripravovanú z poctivo vybraných kávových zŕn. 
+            </p>
+            <br> 
+            <p>
+            Naším cieľom je vytvoriť pre vás príjemný zážitok v krásnom prostredí s výbornou kávou.
+             Okrem posedenia priamo v kaviarni si môžete naše produkty jednoducho objednať aj domov prostredníctvom online objednávky a vychutnať si ich kdekoľvek.
             </p>
 
-            <h1>Aké druhy kávy používame?</h1>
-            <p>
-                Používame najmä 100% Arabicu z rôznych kútov sveta a kvalitné zmesi
-                Arabica &amp; Robusta. Kávu pražíme tak, aby vynikli jej prirodzené chute.
-            </p>
-
-            <p>
-                Okrem kávy si u nás môžete kúpiť aj čerstvé dezerty, domáce limonády
-                a malé raňajkové menu.
-            </p>
 
 
         <a href="/menu.php" class="intro-button">Menu</a>
