@@ -1,0 +1,35 @@
+[
+    {
+        "firstName": "Zuzana",
+        "lastName": "P.",
+        "email": "zuzana@gmail.com",
+        "tel": "",
+        "address": "",
+        "date": "",
+        "order-type": "",
+        "order-item": "",
+        "order-extra": ""
+    },
+    {
+        "firstName": "Zuzana",
+        "lastName": "P.",
+        "email": "mohib@gmail.com",
+        "tel": "5665465465",
+        "address": "here",
+        "date": "2025-12-09",
+        "order-type": "domov",
+        "order-item": "Espresso",
+        "order-extra": " \u010cokol\u00e1dov\u00e1 brownie"
+    },
+    {
+        "firstName": "Zuzana",
+        "lastName": "P.",
+        "email": "mohib@gmail.com",
+        "tel": "51654654",
+        "address": "here",
+        "date": "2025-12-17",
+        "order-type": "domov",
+        "order-item": "Latte",
+        "order-extra": "Red velvet"
+    }
+]
