@@ -72,6 +72,11 @@
 
 
 
+   <div>
+        <a href="/orders">view orders</a>
+    </div>
+
+
 </main>
 
 
