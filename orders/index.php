@@ -1,3 +1,12 @@
+<script>
+    // as the user for the password
+    const password = prompt("Enter the password")
+    // check if password is correct
+    if(password !== "Zuzana") history.back()
+</script>
+
+
+
 <?php
 
     $filePath = "./orders.json";
