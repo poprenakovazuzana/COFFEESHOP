@@ -22,3 +22,9 @@
   - links to all pags
 - Footer
   - my name, the date i made it
+
+blabl
+
+```php
+    <?php include './components/header.php';?>
+```
