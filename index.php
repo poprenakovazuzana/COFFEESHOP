@@ -11,11 +11,8 @@
 
     <?php include './components/header.php';?>
 
-    <div class="hero-image">
-
-        <img src="/images/bc1.png" alt="Šálka kávy">
-    </div>
-
+    
+    
 
 
 
